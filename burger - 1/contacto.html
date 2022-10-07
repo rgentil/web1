@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Burger - Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="primero">
+            <a href="index.html"><img class="iconoLogo" src="images/iconologo.jpg" alt="icono"></a>
+        </div>
+
+        <div class="menu_bar">
+            <a id="btn-menu" class="class-btn-menu"><img src="images/menu-display.png" alt=""></a>
+            <nav class="barra">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <a href="index.html"><img class="imagenLogo" src="images/hamburger.png" alt="burger" /></a>
+        </div>
+
+    </header>
+
+    <section>
+        <h1>Complete el formulario</h1>
+        <h2>Déjanos tu crítica y ayúdanos a mejorar</h2>
+        <h2>Recibirás cupones con descuentos especiales</h2>
+
+        <form class="datosContactos" id="form-contacto">
+
+            <input type="text" class="text-contancto" name="nombre" value="" placeholder="Ingrese Nombre" required/>
+            <input type="text" class="text-contancto" name="apellido" value="" placeholder="Ingrese Apellido" required/>
+            <input type="email" class="text-contancto" name="email" value="" placeholder="Ingrese su Email" />
+
+            <div class="radio-contacto">
+                <span>Sexo </span>
+                <input type="radio" name="sexo" value="M" id="radio-masculino" />
+                <label for="radio-masculino">Masculino</label>
+                <input type="radio" name="sexo" value="F" id="radio-femenino" />
+                <label for="radio-femenino">Femenino</label>
+            </div>
+
+            <div class="checkbox-contacto">
+                <span>Producto </span>
+                <input type="checkbox" name="tipoHamburguesaT" value="T" />
+                <label for="checkbox-tradicional">Tradicional</label>
+                <input type="checkbox" name="tipoHamburguesaP" value="P"/>
+                <label for="checkbox-pollo">Pollo</label>
+                <input type="checkbox" name="tipoHamburguesaV" value="V"/>
+                <label for="checkbox-vegan">Vegan</label>
+            </div>
+
+            <div class="select-contacto">
+                <span>Su estado actual es...</span>
+                <select name="estadoCliente">
+                    <option value="blanco"></option>
+                    <option value="muyenojado">Muy enojado</option>
+                    <option value="enojado">Enojado</option>
+                    <option value="contento">Contento</option>
+                    <option value="muycontento">Muy contento</option>
+                </select>
+            </div>
+
+            <textarea class="textArea-contacto" name="comentario" cols="50" rows="10" minlength="20" maxlength="500"></textarea>
+
+            <div class="boxRandomNumber">
+                <p id=p-randomNumber></p>
+            </div>
+            <input class="text-contancto" type="text" id="textCaptcha" name="textcaptcha" value=""
+                placeholder="Ingrese el número para validar">
+
+            <p id="p-captcha"></p>
+
+            <div>
+                <button class="btnContacto" id="btn-refresh"> Refresh</button>
+                <button class="btnContacto" id="btn-validarCaptcha"> Validar</button>
+                <button class="btnContacto" id="btn-enviar">Enviar</button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <div>
+            <h2>Redes Sociales</h2>
+            <ul class="redes">
+                <li class="red"><a href="https://www.facebook.com" target="_blank"><img src="images/redes/facebook.png"
+                            alt="Facebook"></a> </li>
+                <li class="red"><a href="https://www.Instagram.com" target="_blank"><img
+                            src="images/redes/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Conócenos</h2>
+            <ul>
+                <li>Cómo llegar</li>
+                <li>Términos y condiciones</li>
+                <li>Políticas de privacidad</li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados 2021</p>
+    </footer>
+
+    <script text="text/javascript" src="js/main.js"></script>
+    <script text="text/javascript" src="js/contacto.js"></script>
+
+</body>
+
+</html>

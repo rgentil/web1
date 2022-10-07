@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Rest</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Ejemplo slides</h1>
+    <form id="id_form">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" id="id_nombre" required>
+        <label for="numero">Número</label>
+        <input type="number" name="numero" id="id_numero" required>
+        <p id="p-resultado"></p>
+        <p><input type="button" value="Agregar" id="btn-agregar"></p>
+    </form>
+
+    <p>
+        <input type="button" value="Borrar último" id="btn-borrarUltimo">
+        <input type="button" value="Modificar último" id="btn-modificarUltimo">
+    </p>
+
+    <details>
+        <summary>Lista de nombres</summary>
+        <h1>Lista de nombres</h1>
+        <li id="lista_nombres">
+        </li>
+    </details>
+
+    <h1>Ejercios del practico</h1>
+    <p>5. Obtenga mediante un llamado ajax los datos están en el servicio a y b del punto 3 y muestrelos en una lista de
+        una página html.</p>
+    <details>
+        <summary>URL A</summary>
+        <h1>URL A</h1>
+        <ul id="url_a">
+        </ul>
+    </details>
+
+    <details>
+        <summary>URL B</summary>
+        <h1>URL B</h1>
+        <ul id="url_b">
+        </ul>
+    </details>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

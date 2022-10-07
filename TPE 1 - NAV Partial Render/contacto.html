@@ -1,0 +1,62 @@
+<section>
+    <h1>Complete el formulario</h1>
+    <h2>Déjanos tu crítica y ayúdanos a mejorar</h2>
+    <h2>Recibirás cupones con descuentos especiales</h2>
+
+    <form class="datosContactos" id="form-contacto">
+
+        <input type="text" class="text-contancto" name="nombre" value="" placeholder="Ingrese Nombre" required />
+        <input type="text" class="text-contancto" name="apellido" value="" placeholder="Ingrese Apellido" required />
+        <input type="email" class="text-contancto" name="email" value="" placeholder="Ingrese su Email" />
+
+        <div class="radio-contacto">
+            <span>Sexo </span>
+            <input type="radio" name="sexo" value="M" id="radio-masculino" />
+            <label for="radio-masculino">Masculino</label>
+            <input type="radio" name="sexo" value="F" id="radio-femenino" />
+            <label for="radio-femenino">Femenino</label>
+        </div>
+
+        <div class="checkbox-contacto">
+            <span>Producto </span>
+            <input type="checkbox" name="tipoHamburguesaT" value="T" />
+            <label for="checkbox-tradicional">Tradicional</label>
+            <input type="checkbox" name="tipoHamburguesaP" value="P" />
+            <label for="checkbox-pollo">Pollo</label>
+            <input type="checkbox" name="tipoHamburguesaV" value="V" />
+            <label for="checkbox-vegan">Vegan</label>
+        </div>
+
+        <div class="select-contacto">
+            <span>Su estado actual es...</span>
+            <select name="estadoCliente">
+                <option value="blanco"></option>
+                <option value="muyenojado">Muy enojado</option>
+                <option value="enojado">Enojado</option>
+                <option value="contento">Contento</option>
+                <option value="muycontento">Muy contento</option>
+            </select>
+        </div>
+
+        <textarea class="textArea-contacto" name="comentario" cols="50" rows="10" minlength="20"
+            maxlength="500"></textarea>
+
+        <div class="boxRandomNumber">
+            <p id=p-randomNumber></p>
+        </div>
+        <input class="text-contancto" type="text" id="textCaptcha" name="textcaptcha" value=""
+            placeholder="Ingrese el número para validar">
+
+        <p id="p-captcha"></p>
+
+        <div>
+            <button class="btnContacto" id="btn-refresh"> Refresh</button>
+            <button class="btnContacto" id="btn-validarCaptcha"> Validar</button>
+            <button class="btnContacto" id="btn-enviar">Enviar</button>
+        </div>
+
+    </form>
+
+</section>
+
+<!--script text="text/javascript" src="js/contacto.js"></script-->

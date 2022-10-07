@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Burger - Precios</title>
+</head>
+
+<body id="body-precios">
+    <header id="header-precios">
+        <div class="primero">
+            <a href="index.html"><img class="iconoLogo" src="images/iconologo.jpg" alt="icono"></a>
+        </div>
+
+        <div class="menu_bar">
+            <a id="btn-menu" class="class-btn-menu"><img src="images/menu-display.png" alt=""></a>
+            <nav class="barra">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <a href="index.html"><img class="imagenLogo" src="images/hamburger.png" alt="burger" /></a>
+        </div>
+
+    </header>
+
+    <section id="section-precios">
+        <div id="div-precios-completo" class="div-tabla">
+            <table>
+                <h1>Menú de precios</h1>
+                <thead>
+                    <th>Precios</th>
+                    <th>Tradicional</th>
+                    <th>Pollo</th>
+                    <th>Vegan</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Simple</th>
+                        <td>$500</td>
+                        <td>$550</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <th>Doble</th>
+                        <td>$700</td>
+                        <td>$725</td>
+                        <td>$740</td>
+                    </tr>
+                    <tr>
+                        <th>Triple</th>
+                        <td>$950</td>
+                        <td>$975</td>
+                        <td>$940</td>
+                    </tr>
+                <tfoot>
+                    <th>Descuento</th>
+                    <td>5%</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                </tfoot>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="div-precios-reducido" class="div-tabla">
+            <table>
+                <h1>Menú de precios</h1>
+                <thead>
+                    <th>$</th>
+                    <th>Trad.</th>
+                    <th>Pollo</th>
+                    <th>Vegan</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Simple</th>
+                        <td>$500</td>
+                        <td>$550</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <th>Doble</th>
+                        <td>$700</td>
+                        <td>$725</td>
+                        <td>$740</td>
+                    </tr>
+                    <tr>
+                        <th>Triple</th>
+                        <td>$950</td>
+                        <td>$975</td>
+                        <td>$940</td>
+                    </tr>
+                <tfoot>
+                    <th>Desc. %</th>
+                    <td>5%</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                </tfoot>
+                </tbody>
+            </table>
+        </div>
+
+        <form>
+            <input id="input-filtro-servicio" type="text" class="text-contancto" value="" placeholder="Ingrese servicio para filtrar" />
+            <input id="input-filtro-costo-desde" type="number" class="text-contancto" value="" placeholder="Ingrese costo desde para filtrar" />
+            <input id="input-filtro-costo-hasta" type="number" class="text-contancto" value="" placeholder="Ingrese costo hasta para filtrar" />
+            <div>
+                <button id="btn-filtrar" class="btnContacto">Filtrar</button>
+                <button id="btn-limpiar-filtro" class="btnContacto">Limpiar Filtro</button>
+            </div>
+        </form>
+        <div class="div-tabla">
+            <table>
+                <thead>
+                    <th>#</th>
+                    <th>Servicios</th>
+                    <th>Costo</th>
+                </thead>
+                <tbody id="id-boby-servicios">
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <p id="id-paginado"></p>
+            <button id="btn-anterior" class="btnContacto">Anterior</button>
+            <button id="btn-siguiente" class="btnContacto">Siguiente</button>
+        </div>
+
+        <form>
+            <input id="input-tabla-servicio" type="text" class="text-contancto" name="tabla-servicio" value=""
+                placeholder="Ingrese servicio" />
+            <input id="input-tabla-costo" type="number" class="text-contancto" name="tabla-costo" value=""
+                placeholder="Ingrese costo del servicio" />
+            <p id="p-valor-tabla-requerido"></p>
+            <p id="p-tabla-nota-aviso"></p>
+            <div>
+                <button class="btnContacto" id="btn-agregar-servicio">Agregar</button>
+                <button class="btnContacto" id="btn-vaciar-tabla">Vaciar</button>
+                <button class="btnContacto" id="btn-cant-ingresos">N-servicios</button>
+            </div>
+        </form>
+    </section>
+
+    <aside id="aside-precios">
+        <h2>Próximamente Vinos y Cervezas</h2>
+        <a href=""><img class="imagenLogo" src="images/bebidas.jpg" alt="bebidas" /></a>
+    </aside>
+
+    <footer id="footer-precios">
+        <div>
+            <h2>Redes Sociales</h2>
+            <ul class="redes">
+                <li class="red"><a href="https://www.facebook.com" target="_blank"><img src="images/redes/facebook.png"
+                            alt="Facebook"></a> </li>
+                <li class="red"><a href="https://www.Instagram.com" target="_blank"><img
+                            src="images/redes/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Conócenos</h2>
+            <ul>
+                <li>Cómo llegar</li>
+                <li>Términos y condiciones</li>
+                <li>Políticas de privacidad</li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados 2021</p>
+    </footer>
+
+    <script text="text/javascript" src="js/main.js"></script>
+    <script text="text/javascript" src="js/precios.js"></script>
+
+</body>
+
+</html>

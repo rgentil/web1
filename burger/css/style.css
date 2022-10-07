@@ -1,0 +1,304 @@
+html{
+       font-family:sans-serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: rgb(235, 235, 235);
+    margin: 0px;
+    text-align: center;
+}
+
+.primero, .menu_bar{
+    background-color: rgb(17, 17, 17);
+}
+
+.menu_bar{
+    text-align: left;
+}
+
+.iconoLogo{
+    display: block;
+    margin: auto;
+    max-width: 130px;
+    height: auto;
+}
+
+.class-btn-menu{
+    margin: 0;
+    margin-left: 10px;    
+}
+
+.barra{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: none;
+}
+
+.barra ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.barra.barraVisible{
+    display: block;
+}
+
+.barra li{
+    list-style: none;
+    text-transform: uppercase;
+    margin: 1em;
+    color:white;
+    padding: 1em;
+}
+
+.barra a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+}
+
+.barra li:hover {
+    background: rgb(102, 101, 101);
+}
+
+.imagenLogo{
+    display:block;
+    width: 100%;
+    margin:auto;
+}
+
+.principal{
+    background-color: rgb(48, 46, 46);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.pedidos{
+    background-color:  rgb(180, 173, 173);
+    margin: 5px;
+    border: 2px transparent;
+    border-radius: 40px;
+    box-shadow: 16px 12px 20px 0px rgb(0 0 0 / 65%);
+    overflow: hidden;
+}
+
+.pedidos li{    
+    text-align: left;
+}
+
+.pedidos figure{
+    margin: auto;
+}
+
+.imagenPedidos{
+    height: 300px;
+    width: 300px;
+}
+
+.cupones{
+    height: auto;
+    text-align: left;
+    padding-left: 20%;
+    margin-top: 3em;
+    text-decoration: none;
+    text-shadow: 8px 3px 20px rgb(0 0 0 / 60%);
+}
+
+.cupones a{
+    text-decoration: none;
+    color: rgb(126, 2, 2);
+}
+
+#div-precios-completo {
+    display: none;
+}
+
+#div-precios-reducido{
+    display: block;
+}
+
+.div-tabla table{
+    max-width: 50%;
+    border: .2em solid #ccc;
+    padding: .3em;
+    margin: auto;
+}
+
+.div-tabla th, .div-tabla td{
+    padding: .2em;
+    border: .1em solid rgb(34, 33, 33);    
+    box-shadow: 0 12px 16px rgb(0 0 0 / 20%);
+}
+
+.div-tabla th{
+    text-transform: uppercase;
+    background: rgb(74, 121, 190);margin: 1em;
+    background-color: rgb(236, 223, 223);
+    width: 10%;
+}
+
+.row-servicio{
+    background: #d4e4e9;    
+}
+
+.datosContactos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px ;
+}
+
+.text-contancto, .textArea-contacto {
+    width: 50%;
+    padding: 12px 20px;
+}
+
+.text-contancto, .checkbox-contacto, .select-contacto, .textArea-contacto{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.boxRandomNumber{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.randomNumber{
+    font-weight: bold;
+    color: blue;
+    padding: 30px;
+    background: burlywood;
+}
+
+.btnContacto{
+    background-color: #008CBA;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;    
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btnFila{
+    background-color: #6091a0;
+    border: none;
+    text-decoration: none;    
+    cursor: pointer;
+}
+
+#p-captcha{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.captchaOk{
+    background: green;
+}
+
+.captchaError{
+    background: red;
+}
+
+.captchaOriginal{
+    background: cornflowerblue;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color:white;
+    border: solid 1px black;
+    padding: 1em;
+    margin-top: 2em;
+    background-color: rgb(48, 46, 46);
+}
+
+footer li{
+    list-style: none;
+    text-align: left;
+}
+
+.redes{
+    display: flex;
+}
+
+.red{
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.red img {
+    margin-right: 1em;
+    width:30px;
+    height:30px;
+}
+
+.tabla-valor-superior{
+    background: red;
+}
+
+@media only screen and (min-width: 480px){
+
+    .class-btn-menu {
+       display: none;
+    }
+
+    .barra{
+        display: block;
+    }
+    
+    .barra a{
+        font-size: 20px;        
+    }
+
+    .barra ul{
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        padding-inline-start: 0;
+    }
+
+    #div-precios-completo {
+        display: block;
+    }
+
+    #div-precios-reducido{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 900px){
+
+    #header-precios{
+        grid-area: header;
+    }
+    #footer-precios{
+        grid-area: footer;
+    }
+    #section-precios{
+        grid-area: section;
+    }
+    #aside-precios{
+        grid-area: aside;
+    }
+    
+    #body-precios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "section aside"
+            "footer footer"
+        ;
+    }
+    
+}

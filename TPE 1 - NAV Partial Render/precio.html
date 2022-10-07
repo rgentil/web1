@@ -1,0 +1,130 @@
+<section id="section-precios">
+    <div id="div-precios-completo" class="div-tabla">
+        <table>
+            <h1>Menú de precios</h1>
+            <thead>
+                <th>Precios</th>
+                <th>Tradicional</th>
+                <th>Pollo</th>
+                <th>Vegan</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Simple</th>
+                    <td>$500</td>
+                    <td>$550</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <th>Doble</th>
+                    <td>$700</td>
+                    <td>$725</td>
+                    <td>$740</td>
+                </tr>
+                <tr>
+                    <th>Triple</th>
+                    <td>$950</td>
+                    <td>$975</td>
+                    <td>$940</td>
+                </tr>
+            <tfoot>
+                <th>Descuento</th>
+                <td>5%</td>
+                <td>15%</td>
+                <td>25%</td>
+            </tfoot>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="div-precios-reducido" class="div-tabla">
+        <table>
+            <h1>Menú de precios</h1>
+            <thead>
+                <th>$</th>
+                <th>Trad.</th>
+                <th>Pollo</th>
+                <th>Vegan</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Simple</th>
+                    <td>$500</td>
+                    <td>$550</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <th>Doble</th>
+                    <td>$700</td>
+                    <td>$725</td>
+                    <td>$740</td>
+                </tr>
+                <tr>
+                    <th>Triple</th>
+                    <td>$950</td>
+                    <td>$975</td>
+                    <td>$940</td>
+                </tr>
+            <tfoot>
+                <th>Desc. %</th>
+                <td>5%</td>
+                <td>15%</td>
+                <td>25%</td>
+            </tfoot>
+            </tbody>
+        </table>
+    </div>
+
+    <input id="input-filtro-servicio" type="text" class="text-contancto" value=""
+        placeholder="Ingrese servicio para filtrar" />
+    <input id="input-filtro-costo-desde" type="number" class="text-contancto" value=""
+        placeholder="Ingrese costo desde para filtrar" />
+    <input id="input-filtro-costo-hasta" type="number" class="text-contancto" value=""
+        placeholder="Ingrese costo hasta para filtrar" />
+    <div>
+        <button id="btn-filtrar" class="btnContacto">Filtrar</button>
+        <button id="btn-limpiar-filtro" class="btnContacto">Limpiar Filtro</button>
+    </div>
+
+    <div class="div-tabla">
+        <table>
+            <thead>
+                <th>#</th>
+                <th>Servicios</th>
+                <th>Costo</th>
+            </thead>
+            <tbody id="id-boby-servicios">
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <input type="number" id="id-paginado" value="1" readonly>
+    </div>
+    
+    <div>
+        <button id="btn-anterior" class="btnContacto">Anterior</button>
+        <button id="btn-siguiente" class="btnContacto">Siguiente</button>
+    </div>
+
+    <form>
+        <input id="input-tabla-servicio" type="text" class="text-contancto" name="tabla-servicio" value=""
+            placeholder="Ingrese servicio" />
+        <input id="input-tabla-costo" type="number" class="text-contancto" name="tabla-costo" value=""
+            placeholder="Ingrese costo del servicio" />
+        <p id="p-valor-tabla-requerido"></p>
+        <p id="p-tabla-nota-aviso"></p>
+        <div>
+            <button class="btnContacto" id="btn-agregar-servicio">Agregar</button>
+            <button class="btnContacto" id="btn-vaciar-tabla">Vaciar</button>
+            <button class="btnContacto" id="btn-cant-ingresos">N-servicios</button>
+        </div>
+    </form>
+</section>
+
+<aside id="aside-precios">
+    <h2>Próximamente Vinos y Cervezas</h2>
+    <a href=""><img class="imagenLogo" src="../images/bebidas.jpg" alt="bebidas" /></a>
+</aside>
+
+<!--script text="text/javascript" src="../js/precio.js"></script-->

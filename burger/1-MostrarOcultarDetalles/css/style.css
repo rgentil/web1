@@ -1,0 +1,9 @@
+div {
+    visibility: hidden;
+}
+
+.ver { 
+    visibility: visible;
+    background-color: blue;
+    color: white;
+}
